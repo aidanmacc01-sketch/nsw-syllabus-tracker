@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSW Syllabus Dot-Point Tracker</title>
+    <meta name="description" content="Track HSC syllabus dot points across 6 subjects with confidence levels and smart revision suggestions">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NSW Syllabus Dot-Point Tracker</h1>
+            <p class="subtitle">Track your HSC progress across all subjects</p>
+        </header>
+
+        <div class="global-controls">
+            <div class="control-buttons">
+                <button id="highlight-btn" class="btn btn-primary">
+                    <span class="icon">🔍</span>
+                    Highlight weak dot points
+                </button>
+                <button id="suggest-btn" class="btn btn-secondary">
+                    <span class="icon">💡</span>
+                    Suggest 3 dot points to revise today
+                </button>
+            </div>
+
+            <div id="today-focus" class="today-focus hidden">
+                <h3>📚 Today's Focus</h3>
+                <div id="focus-list" class="focus-list"></div>
+            </div>
+        </div>
+
+        <div id="subjects-grid" class="subjects-grid">
+            <!-- Subject columns will be dynamically generated here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
